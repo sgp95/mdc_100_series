@@ -240,7 +240,7 @@ class _BackdropState extends State<Backdrop>
         IconButton(
             icon: Icon(
               Icons.search,
-              semanticLabel: 'login',
+              semanticLabel: 'search',
             ),
             onPressed: () {
               Navigator.push(
@@ -252,13 +252,10 @@ class _BackdropState extends State<Backdrop>
         IconButton(
             icon: Icon(
               Icons.tune,
-              semanticLabel: 'login',
+              semanticLabel: 'filter',
             ),
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (BuildContext context) => LoginPage())
-              );
+              _toggleBackdropLayerVisibility();
             }
         )
       ],
